@@ -9,7 +9,6 @@ It is a very popular Tic-Tac-Toe game developed on python.
 
 
 
-
 board={"T1": " ","T2": " ","T3": " ",
        "M1": " ","M2": " ","M3": " ",
        "D1": " ","D2": " ","D3": " "}
@@ -35,19 +34,16 @@ while True:
     print(board["D1"]+"|"+board["D2"]+"|"+board["D3"])
     if total_moves==9:
         break
-        
     while True:                          #input from players
         if player==1:                    # choose player
             p1=input("palyer one  :  ")
             if p1.upper() in board and board[p1.upper()]==" ":
                 board[p1.upper()]="X"
                 player=2
-                break
-                
+                break     
             else:                           # on wrong input
                 print("Invalid Input , please try again")
-                continue
-                
+                continue        
         else:
              if player==2:                    # choose player
                     p2=input("palyer two  :  ")
@@ -55,12 +51,9 @@ while True:
                         board[p2.upper()]="O"
                         player=1
                         break
-                
                     else:                     # on wrong input
                         print("Invalid Input , please try again")
-                        continue
-                        
-                        
+                        continue                    
     total_moves=total_moves+1
     print("************************************")
     print()
