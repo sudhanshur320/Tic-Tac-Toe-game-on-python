@@ -1,5 +1,15 @@
 # Tic-Tac-Toe-game-on-python
 It is a very popular Tic-Tac-Toe game developed on python.
+
+
+
+
+
+
+
+
+
+
 board={"T1": " ","T2": " ","T3": " ",
        "M1": " ","M2": " ","M3": " ",
        "D1": " ","D2": " ","D3": " "}
